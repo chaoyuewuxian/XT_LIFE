@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-2811" y="625"/>
         </scene>
-        <!--View Controller-->
+        <!--信息分类-->
         <scene sceneID="Cvd-Vr-q7h">
             <objects>
-                <viewController id="L2a-wa-Stl" sceneMemberID="viewController">
+                <viewController id="L2a-wa-Stl" customClass="FirstTabViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2qO-S7-NBC"/>
                         <viewControllerLayoutGuide type="bottom" id="Ikq-Ej-aup"/>
@@ -39,7 +39,8 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ewN-zw-Wla"/>
+                    <navigationItem key="navigationItem" title="信息分类" id="ewN-zw-Wla"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jJL-t3-YcB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -48,7 +49,7 @@
         <!--发布-->
         <scene sceneID="kel-ke-3YZ">
             <objects>
-                <viewController title="发布" id="gdF-Ve-cK0" sceneMemberID="viewController">
+                <viewController title="发布" id="gdF-Ve-cK0" customClass="SecondViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9N7-31-3qT"/>
                         <viewControllerLayoutGuide type="bottom" id="ps2-HQ-Rpi"/>
@@ -60,6 +61,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="8g4-Kv-tgy"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WDX-hE-j6U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="-1933" y="1579"/>
         </scene>
-        <!--View Controller-->
+        <!--Third View Controller-->
         <scene sceneID="ip5-xa-7N2">
             <objects>
-                <viewController id="tFD-5U-srK" sceneMemberID="viewController">
+                <viewController id="tFD-5U-srK" customClass="ThirdViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Pbp-wW-hE9"/>
                         <viewControllerLayoutGuide type="bottom" id="6Nz-Vw-NGW"/>
@@ -130,16 +132,21 @@
         <!--分类-->
         <scene sceneID="dib-KM-NRV">
             <objects>
-                <navigationController title="分类" hidesBottomBarWhenPushed="YES" navigationBarHidden="YES" id="j1e-YX-Rhy" sceneMemberID="viewController">
+                <navigationController title="分类" hidesBottomBarWhenPushed="YES" id="j1e-YX-Rhy" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="Tab-icon-分类" selectedImage="Tab-icon-分类-点击" id="rSi-3r-mDv">
                         <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="-8"/>
                     </tabBarItem>
-                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gOc-W3-T7u">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="uZ8-Mq-N5r">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </toolbar>
                     <connections>
                         <segue destination="L2a-wa-Stl" kind="relationship" relationship="rootViewController" id="sBY-V7-0w4"/>
                     </connections>
